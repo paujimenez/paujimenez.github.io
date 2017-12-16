@@ -1,0 +1,119 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+% moderncv styles
+\moderncvstyle{casual}       % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvcolor{blue}
+%\usepackage{hyperref}
+
+\usepackage{anysize}
+\marginsize{1.5cm}{1.5cm}{1cm}{1.5cm}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} 
+\usepackage{graphicx}
+% \usepackage{marvosym}
+
+%\moderncvstyle{classic}       % idem
+
+% adjust the page margins
+%\usepackage[scale=0.8h]{geometry}
+%\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data (the given example is exhaustive; just give what you want)
+\firstname{\Huge Paula}
+\familyname{\Huge Jimenez}
+%\title{Ciencias de la Computación}
+%\address{Calle de la Golosina, nº3, 1º3\\13013 Springfield}  % for classic style
+\address{Dr. Rómulo Naón 3553, Saavedra, C.A.B.A.} % for casual style
+\phone{+54 911 6195 6013}
+\email{pjimenez@dc.uba.ar}
+%\email{puly05@gmail.com}
+\homepage{github.com/paujimenez}
+%\renewcommand*\httplink[2][]{{\urlstyle{sf}\expandafter\href#2}}
+%\homepage{{https://paujimenez.github.io}{Latest version on \color{blue} paujimenez.github.io}}
+\extrainfo{Compiled on \today. Latest version on \href{https://paujimenez.github.io/cv/pjimenez.pdf}{\color{blue}paujimenez.github.io/cv/pjimenez.pdf}}
+
+
+%\photo[64pt]{interrogacion.jpg} % also optional, and the optional argument is the height the picture must be resized to
+%\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+% command and color used in this document, independently from moderncv 
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+% \maketitle
+%\makequote
+
+\section{Formación Académica}
+\cventry{\mbox{2009 - Presente}}{Lic. Ciencias de la Computación}{Universidad de Buenos Aires}{Promedio: 7.6/10}{}{}
+\cventry{2006 -- 2008}{Secundario especializado en Economía y Gestión de las Organizaciones}{Instituto Santa Teresita del niño Jesús, Florida, Prov. de Buenos Aires}{}{}{}
+
+\section{Formación Complementaria}
+\cventry{2014}{Microsoft Azure for Research Training}{Universidad de Buenos Aires}{Duración: 4 horas}{}{}
+\cventry{2011}{Curso de Visión en Robótica}{Universidad de Buenos Aires}{Duración: 4 meses}{}{}
+\cventry{2010}{Taller de Robótica}{Facultad de Ciencias Exactas y Naturales}{UBA}{Duración: 3 meses}{Participación en la competencia Nacional de robótica, modalidad “Carrera”, organizada por la UTN de Bahía Blanca.}
+\cventry{2010}{Taller de instalación de Linux}{Facultad de Ciencias Exactas y Naturales}{UBA}{Duración: 2 horas}{}
+\cventry{2008 -- 2009}{Curso de Reparación de PC}{CAI educativa}{Duración: 6 meses}{}{}
+\cventry{2007}{Curso de Dreamweaver}{CISCA}{Duración: 1 mes}{}{}
+
+
+\section{Experiencia Laboral}
+\cventry{Jun. 2016 -- Dic. 2017}{Node.js Software Developer}{\href{http://www.gilbarco.com/us/}{\color{blue}Gilbarco Veeder-Root}}{A través de \href{http://www.tecnosoftware.com/}{\color{blue}Tecnosoftware}}{Backend developer en un sistema embebido que permite el mantenimiento y monitoreo en forma remota de surtidores de combustible. El trabajo consistía en mantener y desarrollar nuevos features en un servicio en Node.js que se conecta con el cloud para enviar información y recibir comandos para los surtidores. El servicio se comunica con otros dispositivos internos utilizando un módulo en C++ y maneja tareas del sistema utilizando shell scripting}{Referencia: Rodrigo Castro <\href{mailto:rodrigo.castro@gilbarco.com}{rodrigo.castro@gilbarco.com}>}
+\cventry{Feb. 2014 -- May. 2015}{C++ Solution Developer}{\href{http://www.intraway.com/}{\color{blue}Intraway Corporation}}{}{Backend developer en proyecto de vigilancia con cámaras IP. Las cámaras se registraban al sistema a través de un servicio web que le permitía al usuario el manejo remoto de las mismas. El sistema se encargaba de configurar las cámaras, programar acciones, cortar, procesar y archivar los videos, entre otras cosas}{}
+\cventry{Feb. 2013 -- Ene. 2014}{.NET Web Developer}{\href{https://www.atioinc.com/}{\color{blue}Atio International}}{}{Aplicaciones web para el manejo y administración de empresas dedicadas a la distribución de combustible a gran escala. El proyecto permitía registrar clientes para manejar las cobranzas y hacer el seguimiento de sus empleados con el registro gastos y facturas}{}
+
+%\cventry{2011}{Guía en Tecnópolis}{5 meses, (Julio a Noviembre)}{Consistía en guiar contingentes numerosos a través del parque, recorriendo los lugares más interesantes de acuerdo con las edades de los integrantes del grupo}{}{}
+
+%\cventry{2008}{Pasantía contable}{Estudio Contable, contadora Alfonsina María Bollella de Zuk}{6 horas.}{Confección de libros IVA compras e IVA ventas; Preparación y pase de Declaraciones Juradas Impositivas; Llenado de boletas para el pago de cargas sociales; Confección de asientos contables; Registraciones en Libro Diario Rubricado; Pase de planillas de sueldos y jornales al libro Registro Único de Remuneraciones}{}{}
+
+
+
+\section{Idiomas}
+\cvlanguage{Nativo}{Español}{}
+\cvlanguage{Intermedio}{Inglés}{}
+
+
+\section{Lenguajes de Programación}
+\cvcomputer{Intermedio}{\mbox{ES5 JS (Node.js), C/C++, Bash, .NET (C\#), ASP.NET MVC}}{}{}
+\cvcomputer{Básico}{\mbox{Java, Python, Jquery, HTML, SQL, x86 Assembly}}{}{}
+
+
+\section{Otros Conocimientos}
+\cvcomputer{Tools}{\mbox{SVN, Git, Jira, Crucible, Jenkins, TWiki, PuTTY, SSH, SCP, dpkg-deb, \LaTeX}}{}{}
+\cvcomputer{SO}{Windows XP/7/10, Linux}{}{}
+\cvcomputer{RDBMS}{MS SQL Server, MySQL, NeDB}{}{}
+
+
+%\section{Intereses}
+%\cvlistitem{Robótica}
+%\cvlistitem{Sistemas embebidos}
+
+
+%\section{Otras consideraciones}
+%\cvlistitem{Censista del Censo Nacional realizado en el año 2010.}
+%\cvlistitem{Participación en las Olimpíadas Contables Organizadas por la universidad del CEMA en 2007 y 2008.}
+
+\end{document}
